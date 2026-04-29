@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Each section full screen */
+.section {
+  min-height: 100vh; /* FIX: no collapse */
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #00f5a0, #00d9f5, #9d50bb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Stats row */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1 1 22%;
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+
+.stat-card:nth-child(1) { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+.stat-card:nth-child(2) { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+.stat-card:nth-child(3) { background: linear-gradient(135deg, #f6d365, #fda085); }
+.stat-card:nth-child(4) { background: linear-gradient(135deg, #84fab0, #8fd3f4); }
+
+.stat-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.stat-card p {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+/* Charts grid */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Chart cards */
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 15px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  height: 280px; /* FIX: fixed height prevents overlap */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

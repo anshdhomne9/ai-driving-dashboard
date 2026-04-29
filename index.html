@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Driving Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SECTION 1 -->
+<div class="section">
+
+  <h2>🚗 AI Driving Dashboard</h2>
+
+  <div class="stats">
+    <div class="stat-card"><h3>Epoch</h3><p>5</p></div>
+    <div class="stat-card"><h3>Accuracy</h3><p>88%</p></div>
+    <div class="stat-card"><h3>Loss</h3><p>0.3</p></div>
+    <div class="stat-card"><h3>Status</h3><p>Running</p></div>
+  </div>
+
+  <div class="charts">
+    <div class="card"><canvas id="progressChart"></canvas></div>
+    <div class="card"><canvas id="accuracyChart"></canvas></div>
+    <div class="card"><canvas id="lossChart"></canvas></div>
+  </div>
+
+</div>
+
+<!-- SECTION 2 -->
+<div class="section">
+
+  <h2>📊 Advanced Analytics</h2>
+
+  <div class="stats">
+    <div class="stat-card"><h3>Speed</h3><p>72 km/h</p></div>
+    <div class="stat-card"><h3>Steering</h3><p>15°</p></div>
+    <div class="stat-card"><h3>Braking</h3><p>Active</p></div>
+    <div class="stat-card"><h3>Sensors</h3><p>Online</p></div>
+  </div>
+
+  <div class="charts">
+    <div class="card"><canvas id="speedChart"></canvas></div>
+    <div class="card"><canvas id="steeringChart"></canvas></div>
+    <div class="card"><canvas id="sensorChart"></canvas></div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
