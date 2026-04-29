@@ -24,3 +24,6 @@ A modern dashboard to visualize autonomous driving metrics and analytics.
 - Real-time data integration
 - Backend APIs
 - Live updates
+
+ Deployment link
+ https://ai-driving-dashboard-jh0ylxre5-anshdhomne9s-projects.vercel.app/
